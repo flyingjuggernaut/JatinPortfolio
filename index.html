@@ -20,6 +20,7 @@
     <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
     <script src="assets/js/hover.zoom.js"></script>
     <script src="assets/js/hover.zoom.conf.js"></script>
+    <script src="assets/js/custom.js"></script>
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -31,7 +32,7 @@
   <body>
 
     <!-- Static navbar -->
-    <div class="navbar navbar-inverse navbar-static-top" style= 'background-color: #9B78B5;'>
+    <div class="navbar navbar-inverse navbar-custom">
       <div class="container">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -44,33 +45,41 @@
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
             <li class='dropdown'>
-            <a href="#" class="dropbtn">Work  <img src="assets/img/portfolio/Group.png" alt="Jatin"></a>
+            <a href="#projects" class="dropbtn">Work</a>
             <div class="dropdown-content">
               <a href="#projects">Projects</a>
               <a href="#dribbbleshots">Dribbble shots</a>
-              <a href="#designjams">Design Jams</a>
+              <a href="designJams.html">Design Jams</a>
             </div>
             </li>
-            <li><a href="https://drive.google.com/open?id=0B4SElr6Cqby2MXBJczJxalNwdm8" target='_blank'>Resume</a></li>
-            <li><a href="#aboutMe">About</a></li>
+            <li><a data-toggle="modal" data-target="#myModalResume">Resume</a></li>
+            <li><a href="vault.html">From the vault</a></li>
+            <li><a href="#aboutMe">About me</a></li>
             <li><a href="#footer">Contact</a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
     </div>
 
+     <!-- Modal -->
+  <div class="modal fade" id="myModalResume" role="dialog">
+    <div class="modal-dialog" style='width:800px; margin-left: 5%;'>
+          <embed class='centered' src="assets/img/portfolio/Resume_JatinGupta.pdf" width="800px" height="1100px" />
+           
+    </div>
+  </div>
+  
 	<!-- +++++ Welcome Section +++++ -->
 	<div id="ww">
-	    <div class="container">
+	    <div class="container" style="margin-top: 6%;">
 			<div class="row">
 				<div class="col-lg-10 col-lg-offset-2">
                 <table>
 					<tr>
                     <td><img src="assets/img/me2.png" alt="Jatin"></td>
-					<td class= 'centered' style = 'padding-left: 50px;'><h1 style='color: #9B78B5'>Hi, I am Jatin!</h1>
-					<p style='font-size:18px,font-family:segoeuil '>I am a first year masters student at the University of Michigan studying Human-computer interaction and curious to discover things and a passion to make stuff as the driving factor. </p>
-
-                    <p>I use design to tell stories and to save people from bad products through my creative solutions.</p>
+					<td class= 'centered' style = 'padding-left: 5%;'><h1 style='color: #9B78B5'>Hi, I am Jatin!</h1>
+					<p style='font-size:18px'>I am a first year masters student at the University of Michigan studying Human-computer interaction and curious to discover things and a passion to make stuff as the driving factor. </p>
+                    <p style='font-size:18px,font-family:segoeuil' >I use design to tell stories and to save people from bad products through my creative solutions.</p>
                     
                     <p><a href="#aboutMe" class='fontsegoeb'>Read more about me....</a></p>
                     </td>
@@ -80,7 +89,6 @@
 			</div><!-- /row -->
 	    </div> <!-- /container -->
 	</div><!-- /ww -->
-	
 	
 	<!-- +++++ Projects Section +++++ -->
 	
@@ -94,11 +102,11 @@
 		</div>	
         <div class="row mt centered">	
 			<div class="col-lg-4">
-				<a class="zoom green" href="#newEagle"><img class="img-responsive" src="assets/img/portfolio/New Eagle.png" alt="" /></a>
+				<a class="zoom green" href="newEagle.html"><img class="img-responsive" src="assets/img/portfolio/New Eagle.png" alt="" /></a>
 				<p style='padding-top: 10px;'>UX RESEARCH: NEW EAGLE</p>
 			</div>
             <div class="col-lg-4">
-				<a class="zoom green" href="#tecaid"><img class="img-responsive" src="assets/img/portfolio/TECAID1.png" alt="" /></a>
+				<a class="zoom green" href="tecaid.html"><img class="img-responsive" src="assets/img/portfolio/TECAID1.png" alt="" /></a>
 				<p style='padding-top: 10px;'>IX DESIGN: TECAID</p>
 			</div>			
 			<div class="col-lg-4" style='padding-top: 145px'>
@@ -108,7 +116,7 @@
 		</div><!-- /row -->
         
         <!-- Dribbble shots -->
-        <div class="row mt" id='dribbbleshots'>
+        <div class="row mt" style='padding-top:8%;' id='dribbbleshots'>
 			<div class="col-lg-6 col-lg-offset-3 centered">
 				<h3>PERSONAL DESIGNS</h3>
 				<hr>
@@ -132,170 +140,26 @@
         </table>
         </div><!-- /row -->
 	
-    
-    <!-- Design Jams -->
-    
-        <div class="row mt" id='designjams'>
-            <div class="col-lg-6 col-lg-offset-3 centered">
-                <h3>DESIGN JAMS</h3>
-                <hr>
-                <p>Learnings from 10 design jams</p>
-            </div>
-        </div>
-        <div class="row mt centered">
-            <table>
-                <td style='padding-right:10px;' width='33%'>
-                    Coming Soon!!
-                </td>
-            </table>
-        </div><!-- /row -->
-        <!--<div class="row mt centered">	
-        <table>
-			<td style='padding-right:10px;' width='33%'>
-				<a href="https://dribbble.com/shots/3201750-Profile-page-for-a-life-coach-expert" target='_blank'><img width='100%' src="assets/img/portfolio/shot1.png" alt="" /></a>
-				<p style='padding-top: 10px;'>PROFILE PAGE</p>
-            </td>
-            <td style=',padding-left:10px;padding-right:10px;' width='33%'>
-				<a href="https://dribbble.com/shots/3189725-Credit-Card-checkout" target='_blank'><img width='100%' src="assets/img/portfolio/shot2.png" alt="" /></a>
-				<p style='padding-top: 10px;'>CREDIT CARD CHECKOUT</p>
-            </td>     
-             <td style='padding-left:10px;' width='33%'>
-				<a href="work01.html"><img class="img-responsive" src="assets/img/portfolio/moreProjects.png" alt=""></a>
-                <p><a class='fontsegoeb' href="https://dribbble.com/jatinthedesigner" style='font-size: 18px;' target='_blank'>Check out more dribbble shots</a></p>
-			</td>
-        </table>
-        </div>--><!-- /row -->
 	</div><!-- /container -->
     
     
     
     <!-- +++++ Projects Section +++++ style="display: none;"-->
-	<div class="container" id='newEagle'>
-		<div class="row mt">
-			<div class="centered"  style="border: #9B78B5; border-style: solid;">
-				<h2>USER EXPERIENCE RESEARCHER: NEW EAGLE</h2>
-				<hr>
-				
-                
-                
-                
-                
-                <table>
-                    <tr style="border-bottom: #000; border-bottom-width: thin; border-bottom-style: solid;">
-                        <td style="width: 50%;"><h5 style='font-size:18px;'>Overview</td> 
-                        <td style="padding-right:20px;padding-top: 1%;"><p>Conducted contextual inquiry and created an affinity wall to study and find out the gaps in the order fulfillment process of New Eagle; a control system solutions expert based out of Ann Arbor.</p></td>
-                    </tr>
-                    <tr style="border-bottom: #000; border-bottom-width: thin; border-bottom-style: solid;">
-                        <td style="width: 50%;"><h5 style='font-size:18px;'>Who is New Eagle?</td>  
-                        <td style="padding-right:3%;padding-top:2%;"><p>New Eagle is a mechatronics control systems solutions expert that helps a customer take his or her his idea to prototype phase or to the market in the quickest way possible. <a class='fontsegoeb' href='https://app.xtensio.com/folio/rolqffhq/1308008' target="_blank">See the persona here.</a></p></td>
-                    </tr>
-                    <!--<tr><td colspan='2'><h5 style='font-size:18px;padding-top:30px;'>Methodology</h5></tr>-->
-                    <tr>
-                        <td style="width: 50%;"><h5 style='font-size:18px;'>Methodology</td>
-                        <td style='padding-top: 4%;padding-bottom:20px;'><img src="assets/img/portfolio/NewEagle_2.jpg" alt="" align='middle' width="80%"/>
-                    </tr>
-                     <tr>
-                        <td colspan='2'>
-                            <p class='pdesc' style='padding-top:20px;'>To begin our research, we met with our client for an <span class='fontsegoeb'>initial meeting</span> to have a sense of the company’s domain and the problem that they are facing. Through this meeting we <span class='fontsegoeb'>identified a set of key stakeholders</span> that would help us in getting a more thorough grasp on the criticality of the problem. We also got to know the solutions already explored by them in order to curb the problem.</p>
-                            <p class='pdesc' style='padding-top:20px;'>For understanding the problem in more depth and at the employee level, we conducted a set of <span class='fontsegoeb'>contextual interviews</span> with the key players involved which in our case were two customers, two employees working on the operations side and one on the administrative side. Following each interview we conducted an <span class='fontsegoeb'>interpretation session</span> of approximately the same duration as the interview, with all the members of the team. During the interpretation session, the key observations, findings, quotes etc. (from the notes and the audio recording of the interview), that could be of relevance were accumulated and stored in a document to be referred to later.</p>
-                            <p class='pdesc'>Meanwhile the interviews were going on; each of the team members did <span class='fontsegoeb'>background research</span> on different topics. The topics covered the overview of the client industry, some issues or trends influencing the sector of which our client is a part of, the strengths and weaknesses of the competitors of the client and scholarly research related to the issue being faced by the client. This research helped us in understanding the client industry and to think about the issue from their perspective. With this, our interview questions became more and more specific from being very abstract in the beginning.</p>
-                            <p class='pdesc'>The <span class='fontsegoeb'>notes from the interviews were annotated</span> to find out some key things that might have been missed and to deduce the interviewer’s answer to a question as a whole. To elaborate, most of the times people do not say what they want to say and hence deducing from their language what they meant to say becomes absolutely essential. This gave us some key insights into the interview which were also included in the notes of the interview.</p>
-                            <p class='pdesc'>The notes from all the interviews were integrated to form an <span class='fontsegoeb'>affinity wall</span>. An affinity wall is built in order to get all the data relevant to the problem together at one place, which can then be chunked together to find out five or six problem areas.</p>
-                            <p class='pdesc' style= 'text-align: center;padding-top: 20px;padding-bottom: 20px;'><img src="assets/img/portfolio/NewEagle_3.JPG" alt="" align='middle' width="100%"/></p>
-                        </td>
-                    </tr>
-                    
-                        
-                   
-                    <tr style="border-bottom: #000; border-bottom-width: thin; border-bottom-style: solid;">
-                        <td colspan='2'>
-                            <p class='pdesc'><span class='fontsegoeb'>With these five or six key findings we met with the management again</span>, in order to discuss it with them and see which the most problematic area was for them. From the meeting, two key areas which were troubling our client the most came up and thus we began our research for the recommendations.</p>
-                            <p class='pdesc'>As a team, we discussed on the two issues to see if anything related to them came up in our respective background research reports. We then <span class='fontsegoeb'>brainstormed</span> for some solutions and in the end came up with our <span class='fontsegoeb'>recommendations</span>, of which one was our primary recommendation that will have the maximum impact with reasonable amount of effort and  two or three secondary recommendations that when implemented will either have low impact or involved a lot of effort. In order to make our recommendations/solutions more concrete, two to three evidence like findings, quotes from interview were used as well.</p>
-                            <!--<p><img src="assets/img/portfolio/NewEagle_10.PNG" alt="" align='middle' width="80%"/></p>
-                            <p class='pdesc'>How will our recommendations impact New Eagle?</p>
-                            <p><img src="assets/img/portfolio/NewEagle_9.PNG" alt="" align='middle' width="80%"/></p>-->
-                            <p class='pdesc'>Coming soon: Learnings from the process</p>
-                        </td>
-                     </tr>
-                    <tr style="border-bottom: #000; border-bottom-width: thin; border-bottom-style: solid;">
-                        <td style="padding-top: 3%;padding-bottom: 3%;" ><img width="400" height="300" src="assets/img/portfolio/New Eagle.png" alt="" align='middle' width="80%"/></td>
-                        <td style="padding-top: 3%;"><p><iframe width="400" height="300" src="https://www.youtube.com/embed/mWrOBKtA5lE" frameborder="0" allowfullscreen></iframe></p></td>
-                    </tr>    
-                    <!--<tr>
-                        <td style="width: 50%;"><h5 style='font-size:18px;'>The Team</td> 
-                        <td style="padding-top: 3%;padding-bottom: 3%;" ><img width="400" height="300" src="assets/img/portfolio/New Eagle.png" alt="" align='middle' width="80%"/>></td>
-                    </tr>-->    
-
-                </table>
-			</div>
-		</div>
-	</div><!-- /container -->
+	
     
-    <div class="container" id='tecaid' style="padding-top:50px;">
-		<div class="row mt">
-			<div class="centered"  style="border: #9B78B5; border-style: solid;">
-				<h2>INTERACTION DESIGNER: TECAID - <a href="http://ac3di9.axshare.com/#g=1&p=homepage&hi=1" target='_blank'>Play with the prototype</a></h2>
-				<hr>
-				
-                <!--<p><iframe width="400" height="300" src="https://www.youtube.com/embed/mWrOBKtA5lE" frameborder="0" allowfullscreen></iframe></p>-->
-                
-                
-                
-                <table>
-                    <tr style="border-bottom: #000; border-bottom-width: thin; border-bottom-style: solid;">
-                        <td style="width: 50%;"><h5 style='font-size:18px;'>Overview</td> 
-                        <td style="padding-right:20px;padding-top: 1%;"><p>Conceptualized and designed an app Tecaid, which helps baby boomers request for timely technical assistance from local neighbourhood high school students looking for community service credit </p></td>
-                    </tr>
-                    <tr style="border-bottom: #000; border-bottom-width: thin; border-bottom-style: solid;">
-                        <td style="width: 50%;"><h5 style='font-size:18px;'>Process in brief</td>  
-                        <td style="padding-right:3%;padding-top:2%;"><p>Conducted in person user interviews, brainstormed ideas through sketches, created personas using Xtensio and digital/paper prototypes using Axure, Invision and Figma</p></td>
-                    </tr>
-                                        
-                    <!--<tr><td colspan='2'><h5 style='font-size:18px;padding-top:30px;'>Methodology</h5></tr>-->
-                    <tr>
-                        <td colspan='2' style="width: 50%;padding-top: 30px;"><h5 style='font-size:18px;'>Design Process</td>
-                    </tr>
-                     <tr>
-                        <td colspan='2'>
-                            <p class='pdesc' style='padding-top:20px;'>As I started solving this problem of inaccessibility of technology for baby boomers, I wanted to make baby boomers independent and self-reliant by showing them tutorials or through screenshots or by the use of narrative. While sketching ideas for solving this problem, I came up with many solutions. </p>
-                            <p><img src="assets/img/portfolio/tecaid/tecaid_1.jpg" alt="" align='middle' width="80%"/></p>
-                            <p class='pdesc' style='padding-top:20px;'>While I was brainstorming with two of my peers, the idea about asking a librarian stuck to us the most as it is free and essentially the work gets delegated to someone else.</p>                            
-                            <p><img src="assets/img/portfolio/tecaid/tecaid_5.png" alt="" align='middle' width="80%"/></p>
-                            <p class='pdesc' style='padding-top:20px;'>Teaching google search idea came off as something which was very hard to implement but which can have very high impact, taking into consideration the assumption that google won’t change its interface and become inaccessible. Using Teamviewer to help solve the problem had problems such as what happens when the issue is with connection of physical devices and also it did not offer complete independence for the baby boomer as the child would still have to be present to act as a tech support.</p>
-                            <p class='pdesc' style='padding-top:20px;'>Here is a persona I developed.</p>
-                            <p><img src="assets/img/portfolio/tecaid/tecaid_6.PNG" alt="" align='middle' width="80%"/></p>
-                            <p class='pdesc' style='padding-top:20px;'>From the interviews I conducted with baby boomers, two things surfaced. Use of watsApp to connect the baby boomers was not encouraged a lot as it was very much dependent on demographics and in US, watsApp is not even used that much. Secondly, the population in this range wants to get their work done as quickly and as much without frustration as possible and they like to ask for help. For this they consider, library as one of the best resource. One more thing that came through the interview was regarding my solution of connecting baby boomers to the local primary school children. One of the interviewees suggested that there would be a security issue with the primary school children, so why not consider high school children looking for community service credit.</p>
-                            <p class='pdesc' style='padding-top:20px;'>Thus I shifted my focus to connecting baby boomers to high school children as by the above reasoning, the high school students would have much more motivation to help and also the security issue is somewhat eliminated. Keeping this scenario in mind, I decided to work on an app that helps baby boomers request for timely technical assistance from high school students in the neighborhood looking for community service credit.</p>
-                            <p><img src="assets/img/portfolio/tecaid/tecaid_4.jpg" alt="" align='middle' width="80%"/></p>
-                            <p class='pdesc' style='padding-top:20px;'>Having a somewhat well framed problem, I started conducting the QOC (Questions, Options and criterion) analysis for the features I would be putting in the app. </p>
-                            <p><img src="assets/img/portfolio/tecaid/tecaid_3.PNG" alt="" align='middle' width="80%"/></p>
-                            <p class='pdesc' style='padding-top:20px;'>It was hard as I had to keep it very simple and intuitive at the same time. I had to think about readability, clickability, payment modes and not making my user more conscious than he is already is. Thus I came up with 3 prototypes implementing different ways to choose helpers, to on-board people to the app, for inputting the problem, for logging into the app, for entering location and for giving feedback for the help received. One of them is shown below.</p>
-                            <p><img src="assets/img/portfolio/tecaid/tecaid_8.png" alt="" align='middle' width="80%"/></p>
-                            <p class='pdesc' style='padding-top:20px;'>But as you can see, choosing so many things is still a very high cognitive load for the baby boomers and thus it tends to repel them away from using the app. Thus, I decided to make the app do most of the things like choosing the helper, getting location using GPS and only asking the user about how urgent the problem and in how much time they would like the helper to arrive rather than inputting the complete problem. For login, I decided to use the social media accounts of the baby boomers and once they have logged in, they would not be asked to login again. In regards to giving feedback, I gave the user ability to give or not to give the feedback.</p>
-                            <p class='pdesc' style='padding-top:20px;'>Some other important details that I took into consideration while designing the app were having not more than 3 buttons on a screen, having circular buttons to increase clickability and readability, paying particular attention to navigation i.e. to say giving the user the ability to go back and correct any mistakes or any discourse they might have taken while going through the process. Here is the final digital prototype that I ended up with.</p>
-                            <p><iframe align='middle' width="560" height="315" src="https://www.youtube.com/embed/_5Knc2r5ShA" frameborder="0" allowfullscreen></iframe></p>  
-                            <p class='pdesc' style='padding-top:20px;'>As I started creating a digital prototype for my app, a lot of minor things like where to put a particular icon, how to ask the question from the user in a clear language, where to show the popups, which font and font-weight to use, where to navigate to from a particular screen, where to show the error, which color combination to use that is the right contrast, crept up. As I kept on reiterating, the feedback kept on becoming more and more emotional as in how the user might feel when using the app. That is when I decided to stop reiterating and let the actual users decide the outcome of the app and whether I have been successful in making technology less intimidating for them or not. </p>
-                            <p class='pdesc' style='padding-top:20px;'>Final digital prototype:</p>
-                            <p><iframe align='middle' width="560" height="315" src="https://www.youtube.com/embed/B7cAYsU9Rv8" frameborder="0" allowfullscreen></iframe></p>
-                        </td>
-                    </tr>
-                    
-                </table>
-			</div>
-		</div>
-	</div><!-- /container -->
+    
     
     <!-- The About me section-->
-    <div id="aboutMe">
+    <div id="aboutMe" style='padding-top:8%; padding-bottom:8%;'>
 	    <div class="container">
 			<div class="row">
 				<div class="col-lg-8 col-lg-offset-2 centered">
 					<img src="assets/img/portfolio/Outline.png" alt="Stanley">
 					<h1>About Jatin!</h1>
-					<p>Hello everybody. I am a first-year masters student studying Interaction design at University of Michigan School of Information. I want to work at a firm that allows me to apply my skills in interaction design to real world problems so that I can use it to make interfaces of the future.</p>
+					<p>Hello there. I am a first-year masters student studying Interaction design at University of Michigan School of Information. I want to work at a firm that allows me to apply my skills in interaction design to real world problems so that I can use it to make interfaces of the future.</p>
 					<p> Philosophy: As we are a product of our actions, why not apply the design thinking skills to our decisions and become a better version of ourselves? As applicable to me, I started with the problem of how to learn design thinking.  I looked at the different resources available, chose one resource, started practicing design and got feedback. The same process was repeated several times and is still ongoing. Along the way, I have become much better at design than what I was when I started. Some of the learnings along the way.</p>
 
-<p>I like photography and reading a lot. Love to travel and explore. I believe we should everyday try to do something that makes us afraid because fear is what brings out our true self. I like to play ping pong and hope to play against Xu Xin someday. </p>
+                    <p>I like photography and reading a lot. Love to travel and explore. I believe we should everyday try to do something that makes us afraid because fear is what brings out our true self. I like to play ping pong and hope to play against Xu Xin someday. </p>
 				
 				</div><!-- /col-lg-8 -->
 			</div><!-- /row -->
@@ -306,23 +170,16 @@
 	
 	<div id="footer">
 		<div class="container">
-			<div class="row">
-				<div class="col-lg-4">
+			<div class="row" style='padding-top:8%;padding-bottom:1%;'>
+				
+                <div class="col-lg-4">
 					<h4>My Bunker</h4>
 					<p>
 						Ann Arbor, Michigan.
 					</p>
 				</div><!-- /col-lg-4 -->
 				
-				<div class="col-lg-4">
-					<h4>My Online presence</h4>
-					<p>
-                        <a href="mailto:jating@umich.edu" target='_blank'>Gmail</a><br/>
-						<a href="https://dribbble.com/jatinthedesigner" target='_blank'>Dribbble</a><br/>
-						<a href="https://www.linkedin.com/in/jatinthedesigner" target='_blank'>LinkedIn</a><br/>
-						<a href="https://twitter.com/booWendyb00" target='_blank'>Twitter</a>
-					</p>
-				</div><!-- /col-lg-4 -->
+				<!-- /col-lg-4 -->
 				
 				<div class="col-lg-4">
 					<h4>About Jatin</h4>
@@ -330,7 +187,19 @@
 				</div><!-- /col-lg-4 -->
 			
 			</div>
-		
+            <div class="row" style='padding-top:1%;padding-bottom:2%;'>
+                <div>
+					<h4>My Online presence</h4>					
+				
+                        <table>
+                        <tr>
+                        <td style="width: 3%;"><a href="mailto:jating@umich.edu" target='_blank'><img src="assets/img/icons/gmail.png"/></a></td><td style="padding-right: 2%;"><p>Gmail</p><td>
+						<td style="width: 3%;"><a href="https://dribbble.com/jatinthedesigner" target='_blank'><img src="assets/img/icons/dribbble.png"/></a></td><td style="padding-right: 2%;"><p>Dribbble</p><td>
+						<td style="width: 3%;"><a href="https://www.linkedin.com/in/jatinthedesigner" target='_blank'><img src="assets/img/icons/linkedin.png"/></td><td style="padding-right: 2%;"><p>LinkedIn</p><td>
+						<td style="width: 3%;"><a href="https://twitter.com/booWendyb00" target='_blank'><img src="assets/img/icons/twitter.png"/></a></td><td style="padding-right: 2%;"><p>Twitter</p><td></tr>
+                        <table>
+                </div>
+            </div>
 		</div>
 	</div>
     <!-- Bootstrap core JavaScript
