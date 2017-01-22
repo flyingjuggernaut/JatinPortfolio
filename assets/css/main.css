@@ -78,6 +78,7 @@ p {
     font-family:segoeuil, sans-serif;
     font-weight: 600;
 }
+
 .fontsegoeemj{
     font-family: segoeuiemj, sans-serif;
 }
@@ -99,6 +100,14 @@ p {
     padding-left: 5%;
     padding-right: 5%;
     font-family:segoeuil, sans-serif;
+}
+
+.navbar-custom
+{
+    background-color: #9B78B5;
+    position: fixed;
+    z-index: 9999;
+    width: 100%;
 }
 .centered {
     text-align: center;
@@ -143,6 +152,10 @@ a:after {
     padding: 0;
 }
 
+.pdesc-paddingtop 
+{
+    padding-top:2%;
+}
 
 .navbar {
 	text-transform: uppercase;
@@ -150,12 +163,11 @@ a:after {
 }
 
 .navbar-inverse {
-	padding-bottom: 70px;
-	padding-top: 70px;
+	padding-bottom: 15px;
+	padding-top: 15px;
 }
 
 .navbar-inverse {
-	background-color: #1abc9c;
 	border-color: #16a085;
 }
 
@@ -169,7 +181,7 @@ a:after {
 
 .navbar-brand {
     font-weight: 100;
-    font-size: 60px;
+    font-size: xx-large;
     letter-spacing: 4px;
     font-family: segoeuil, sans-serif;
 }
