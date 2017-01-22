@@ -110,12 +110,14 @@ p {
     width: 100%;
 }
 
-.tborder{
+.tborder
+{
     border: thin solid aqua;
 }
 
-.tborderside{
-    border-right:thin solid aqua;
+.tborderside
+{
+    border-right: thin solid aqua;
 }
 
 .centered {
