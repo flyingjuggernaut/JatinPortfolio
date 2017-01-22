@@ -109,6 +109,15 @@ p {
     z-index: 9999;
     width: 100%;
 }
+
+.tborder{
+    border: thin solid aqua;
+}
+
+.tborderside{
+    border-right:thin solid aqua;
+}
+
 .centered {
     text-align: center;
 }
